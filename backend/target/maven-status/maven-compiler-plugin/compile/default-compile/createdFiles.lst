@@ -1,0 +1,15 @@
+com\example\niokr\controller\UserController.class
+com\example\niokr\security\MockUserAuthenticationFilter.class
+com\example\niokr\controller\HealthController.class
+com\example\niokr\model\RoleName.class
+com\example\niokr\service\RoleService.class
+com\example\niokr\dto\UserDto.class
+com\example\niokr\repository\UserRepository.class
+com\example\niokr\model\Role.class
+com\example\niokr\config\SecurityConfig.class
+com\example\niokr\repository\RoleRepository.class
+com\example\niokr\controller\CurrentUserController.class
+com\example\niokr\model\User.class
+com\example\niokr\service\UserService.class
+com\example\niokr\Application.class
+com\example\niokr\controller\RoleController.class

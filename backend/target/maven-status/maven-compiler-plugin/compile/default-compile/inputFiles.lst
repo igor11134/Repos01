@@ -1,0 +1,15 @@
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\dto\UserDto.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\model\User.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\controller\RoleController.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\controller\CurrentUserController.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\repository\UserRepository.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\model\RoleName.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\service\UserService.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\config\SecurityConfig.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\model\Role.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\service\RoleService.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\Application.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\controller\UserController.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\security\MockUserAuthenticationFilter.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\repository\RoleRepository.java
+C:\Users\pilot\YandexDisk\Git\Reposit_01\backend\src\main\java\com\example\niokr\controller\HealthController.java
