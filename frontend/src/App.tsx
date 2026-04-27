@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Button, Card, Layout, Typography, Space, InputNumber, Alert, Tag, Divider } from 'antd'
+import { Button, Card, Layout, Typography, Space, InputNumber, Alert, Tag } from 'antd'
 import { useQuery } from '@tanstack/react-query'
-import { fetchCurrentUser } from './api/users'
+import { fetchCurrentUser, type UserDto } from './api/users'
 
 const { Header, Content, Footer } = Layout
 const { Title, Paragraph, Text } = Typography
@@ -9,15 +9,13 @@ const { Title, Paragraph, Text } = Typography
 function App() {
   const [userId, setUserId] = useState<number>(1)
 
-  const { data: user, isLoading, isError, error, refetch } = useQuery(
-    ['currentUser', userId],
-    () => fetchCurrentUser(userId),
-    {
-      enabled: !!userId,
-      retry: false,
-      staleTime: 1000 * 60,
-    }
-  )
+  const { data: user, isLoading, isError, error, refetch } = useQuery<UserDto, Error>({
+    queryKey: ['currentUser', userId],
+    queryFn: () => fetchCurrentUser(userId),
+    enabled: !!userId,
+    retry: false,
+    staleTime: 1000 * 60,
+  })
 
   return (
     <Layout style={{ minHeight: '100vh' }}>
@@ -49,7 +47,7 @@ function App() {
             {isError && (
               <Alert
                 message="Ошибка при получении пользователя"
-                description={error instanceof Error ? error.message : 'Неизвестная ошибка'}
+                description={error?.message ?? 'Неизвестная ошибка'}
                 type="error"
                 showIcon
               />
