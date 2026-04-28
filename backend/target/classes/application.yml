@@ -8,14 +8,19 @@ spring:
     password: ${DB_PASSWORD:niokr}
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
+    defer-datasource-initialization: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
 spring.flyway:
-  enabled: true
+  enabled: false
   locations: classpath:db/migration
+
+spring.sql.init:
+  mode: always
+  data-locations: classpath:data.sql
 
 springdoc:
   api-docs:
